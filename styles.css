@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(142, 120, 163);
+}
+
+.grid-c {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 50px);
+  grid-gap: 30px;
+  background-color: brown;
+}
+.grid-c .grid-i {
+  background-color: aqua;
+  border: solid black;
+  padding: 20px;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.grid-ca {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 50px);
+  grid-gap: 15px;
+  background-color: grey;
+}
+.grid-ca .grid-el {
+  text-align: center;
+  padding: 10px;
+}
+.grid-ca .el1 {
+  grid-row: 1/4;
+  grid-column: 1/2;
+  border: solid blue;
+}
+
+/*# sourceMappingURL=styles.css.map */
